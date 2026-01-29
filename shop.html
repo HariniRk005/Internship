@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Shop | CozyCorner</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/component.css">
+  <link rel="stylesheet" href="css/pages.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+
+<body>
+
+<!-- ================= HEADER ================= -->
+<header class="header">
+  <div class="logo">
+    <a href="index.html">CozyCorner</a>
+  </div>
+
+  <nav class="nav">
+    <a href="index.html">Home</a>
+    <a href="shop.html" class="active">Shop</a>
+    <a href="cart.html">Cart</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+</header>
+
+<!-- ================= SHOP ================= -->
+<section class="shop-container">
+
+  <!-- LEFT SIDEBAR -->
+  <aside class="shop-sidebar">
+
+    <!-- SEARCH -->
+    <div class="sidebar-search">
+      <input
+        type="text"
+        id="searchInput"
+        placeholder="Search products..."
+        autocomplete="off"
+      >
+    </div>
+
+    <!-- FILTERS -->
+    <div class="filters">
+      <h3>Filters</h3>
+
+      <div class="filter-group">
+        <h4>Category</h4>
+
+        <label>
+          <input type="checkbox" name="category" value="bed"> Beds
+        </label>
+
+        <label>
+          <input type="checkbox" name="category" value="sofa"> Sofa
+        </label>
+
+        <label>
+          <input type="checkbox" name="category" value="dining"> Dining
+        </label>
+
+        <label>
+          <input type="checkbox" name="category" value="decor"> Decor
+        </label>
+      </div>
+
+      <div class="filter-group">
+        <h4>Price</h4>
+        <input type="range" id="priceRange" min="1000" max="100000" value="100000">
+        <p id="priceLabel">Up to ₹1,00,000</p>
+      </div>
+    </div>
+
+  </aside>
+
+  <!-- PRODUCTS -->
+  <main class="shop-content">
+
+    <div class="shop-header">
+      <h2>All Furniture</h2>
+
+      <select id="sortSelect">
+        <option value="">Sort by</option>
+        <option value="low">Price: Low to High</option>
+        <option value="high">Price: High to Low</option>
+      </select>
+    </div>
+
+    <p id="noProducts" style="display:none; text-align:center; margin-top:40px;">
+      No products found
+    </p>
+
+    <div class="product-grid" id="productGrid">
+
+      <!-- BED -->
+      <div class="product-card" data-category="bed" data-name="luxury king size bed" data-price="100000">
+        <a href="details.html?id=bed1" class="product-link">
+          <img src="images/products/bed-1.jpg" alt="Luxury Bed">
+          <h4>Luxury King Size Bed</h4>
+        </a>
+        <p class="price">₹1,00,000</p>
+        <div class="product-actions">
+          <button onclick="addToCart('bed1','Luxury King Size Bed',100000)">Cart</button>
+        </div>
+      </div>
+
+      <div class="product-card" data-category="bed" data-name="storage bed" data-price="55000">
+        <a href="details.html?id=bed4" class="product-link">
+          <img src="images/products/bed-4.jpg" alt="Storage Bed">
+          <h4>Storage Bed</h4>
+        </a>
+        <p class="price">₹55,000</p>
+        <div class="product-actions">
+          <button onclick="addToCart('bed4','Storage Bed',55000)">Cart</button>
+        </div>
+      </div>
+
+      <!-- SOFA -->
+      <div class="product-card" data-category="sofa" data-name="fabric sofa" data-price="17999">
+        <a href="details.html?id=sofa1" class="product-link">
+          <img src="images/products/sofa-1.jpg" alt="Fabric Sofa">
+          <h4>Fabric Sofa</h4>
+        </a>
+        <p class="price">₹17,999</p>
+        <div class="product-actions">
+          <button onclick="addToCart('sofa1', 'Fabric Sofa',17999)">Cart</button>
+        </div>
+      </div>
+
+      <div class="product-card" data-category="sofa" data-name="luxury sofa" data-price="12999">
+        <a href="details.html?id=sofa2" class="product-link">
+          <img src="images/products/sofa-2.jpg" alt="Luxury Sofa">
+          <h4>Luxury Sofa</h4>
+        </a>
+        <p class="price">₹12,999</p>
+        <div class="product-actions">
+          <button onclick="addToCart('sofa2','Luxury Sofa',12999)">Cart</button>
+        </div>
+      </div>
+
+      <!-- DINING -->
+      <div class="product-card" data-category="dining" data-name="wooden dining set" data-price="38999">
+        <a href="details.html?id=dining3" class="product-link">
+          <img src="images/products/dining-3.jpg" alt="Dining Set">
+          <h4>Wooden Dining Set</h4>
+        </a>
+        <p class="price">₹38,999</p>
+        <div class="product-actions">
+          <button onclick="addToCart('dining3','Wooden Dining Set',38999)">Cart</button>
+        </div>
+      </div>
+
+      <!-- DECOR -->
+      <div class="product-card" data-category="decor" data-name="wall art" data-price="10000">
+        <a href="details.html?id=decor1" class="product-link">
+          <img src="images/products/decor-1.jpg" alt="Wall Art">
+          <h4>Wall Art</h4>
+        </a>
+        <p class="price">₹10,000</p>
+        <div class="product-actions">
+          <button onclick="addToCart('decor1','Wall Art',10000)">Cart</button>
+        </div>
+      </div>
+
+    </div>
+  </main>
+  </section>
+</section>
+
+<!-- ================= FOOTER ================= -->
+<footer class="footer">
+  <div class="footer-grid">
+
+    <div>
+      <h4>CozyCorner</h4>
+      <p>Modern furniture designed for comfort and style.</p>
+    </div>
+
+    <div>
+      <h4>Shop</h4>
+      <a href="shop.html">All Products</a>
+      <a href="shop.html?category=sofa">Sofas</a>
+      <a href="shop.html?category=bed">Beds</a>
+      <a href="shop.html?category=decor">Decor</a>
+    </div>
+
+    <div>
+      <h4>Support</h4>
+      <a href="contact.html">Contact Us</a>
+      <a href="help.html">Help Center</a>
+      <a href="delivery.html">Delivery</a>
+    </div>
+
+    <div>
+      <h4>Legal</h4>
+      <a href="privacy.html">Privacy Policy</a>
+      <a href="terms.html">Terms & Conditions</a>
+    </div>
+
+  </div>
+
+  <p class="footer-bottom">© 2026 CozyCorner. All rights reserved.</p>
+</footer>
+
+<!-- ================= SCRIPTS ================= -->
+<script src="js/products.js"></script>
+<script src="js/shop.js"></script>
+<script src="js/cart.js"></script>
+
+<div id="toast"></div>
+
+</body>
+</html>

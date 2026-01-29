@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Payment | CozyCorner</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/payment.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/component.css">
+  <link rel="stylesheet" href="css/pages.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+
+<header class="header">
+  <div class="logo">
+    <a href="index.html">CozyCorner</a>
+  </div>
+
+  <nav class="nav">
+    <a href="index.html">Home</a>
+    <a href="shop.html">Shop</a>
+    <a href="contact.html">Cart</a>
+</header>
+
+
+<section class="payment-page">
+  <div class="payment-card">
+
+    <h2>Select Payment Method</h2>
+
+    <label class="method">
+      <input type="radio" name="payment" checked>
+      UPI
+    </label>
+
+    <label class="method">
+      <input type="radio" name="payment">
+      Credit / Debit Card
+    </label>
+
+    <label class="method">
+      <input type="radio" name="payment">
+      Cash on Delivery
+    </label>
+
+    <button type="button" id="payBtn" class="btn-primary">
+  Pay Now
+</button>
+
+
+  </div>
+</section>
+
+
+<footer class="footer">
+  <div class="footer-grid">
+
+    <div>
+      <h4>CozyCorner</h4>
+      <p>Modern furniture designed for comfort and style.</p>
+    </div>
+
+    <div>
+      <h4>Shop</h4>
+      <a href="shop.html">All Products</a>
+      <a href="shop.html?category=sofa">Sofas</a>
+      <a href="shop.html?category=bed">Bed</a>
+      <a href="shop.html?category=decor">Decor</a>
+    </div>
+
+    <div>
+      <h4>Support</h4>
+      <a href="contact.html">Contact Us</a>
+      <a href="help.html">Help Center</a>
+      <a href="delivery.html">Delivery</a>
+    </div>
+
+    <div>
+      <h4>Legal</h4>
+      <a href="privacy.html">Privacy Policy</a>
+      <a href="terms.html">Terms & Conditions</a>
+    </div>
+
+  </div>
+
+  <p class="footer-bottom">© 2026 CozyCorner. All rights reserved.</p>
+</footer>
+
+<!-- Toast -->
+<div id="toast-container"></div>
+
+<!-- JS -->
+<script src="js/payment.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,123 @@
+body {
+  font-family: Arial, sans-serif;
+  background: linear-gradient(135deg, #e8f5e9, #f5f7fa);
+}
+
+/* PAGE WRAPPER */
+.success-page {
+  display: flex;
+  flex-direction: column;   /* 👈 VERY IMPORTANT */
+  align-items: center;
+  padding: 60px 20px;
+}
+
+/* SUCCESS CARD */
+.success-card {
+  background: #fff;
+  padding: 40px;
+  border-radius: 16px;
+  text-align: center;
+  width: 100%;
+  max-width: 420px;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+  margin-bottom: 60px;
+}
+
+/* TITLE */
+.success-title {
+  font-size: 30px;
+  font-weight: 800;
+  background: linear-gradient(90deg, #2e7d32, #43a047);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 12px;
+}
+
+/* RECOMMEND SECTION */
+.recommend-section {
+  width: 100%;
+  max-width: 1000px;
+  text-align: center;
+}
+
+.recommend-section h3 {
+  font-size: 22px;
+  margin-bottom: 25px;
+}
+
+/* PRODUCT GRID */
+.recommend-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 24px;
+}
+
+/* PRODUCT CARD */
+.product-card {
+  background: #fff;
+  padding: 18px;
+  border-radius: 14px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.12);
+  transition: transform 0.3s ease;
+}
+
+.product-card:hover {
+  transform: translateY(-6px);
+}
+
+.product-card img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.product-card h4 {
+  margin: 14px 0 6px;
+}
+
+.product-card p {
+  color: #2e7d32;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.continue-btn {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 14px 28px;
+  background: lightgrey;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 600;
+  border-radius: 10px;
+  text-decoration: none;
+  box-shadow: 0 8px 20px rgba(46, 125, 50, 0.3);
+  transition: all 0.3s ease;
+}
+
+.continue-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 12px 25px lightgrey;
+}
+
+.product-link {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 10px 20px;
+  background: lightslategrey;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 600;
+  border-radius: 8px;
+  text-decoration: none;
+  box-shadow: 0 6px 16px lightgrey;
+  transition: all 0.25s ease;
+}
+
+.product-link:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 22px lightgray;
+}

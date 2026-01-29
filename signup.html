@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Sign Up | CozyCorner</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/component.css">
+  <link rel="stylesheet" href="css/pages.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+
+<header class="header">
+  <div class="logo">
+    <a href="index.html">CozyCorner</a>
+  </div>
+
+  <nav class="nav">
+    <a href="index.html">Home</a>
+    <a href="shop.html">Shop</a>
+    <a href="signup.html" class="active">Sign Up</a>
+  </nav>
+</header>
+
+<section class="auth-page">
+  <div class="auth-box">
+    <h2>Create Account</h2>
+    <p>Join CozyCorner today</p>
+
+    <!-- ✅ FIXED FORM -->
+    <form class="auth-form" id="signupForm">
+      <input
+        type="text"
+        id="signupName"
+        placeholder="Full Name"
+        required
+      >
+
+      <input
+        type="email"
+        id="signupEmail"
+        placeholder="Email address"
+        required
+      >
+
+      <input
+        type="password"
+        id="signupPassword"
+        placeholder="Password"
+        required
+      >
+
+      <button type="submit" class="btn-primary">Sign Up</button>
+    </form>
+
+    <p class="auth-switch">
+      Already have an account?
+      <a href="login.html">Login</a>
+    </p>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="footer-grid">
+    <div>
+      <h4>CozyCorner</h4>
+      <p>Modern furniture designed for comfort and style.</p>
+    </div>
+
+    <div>
+      <h4>Shop</h4>
+      <a href="shop.html">All Products</a>
+      <a href="shop.html?category=sofa">Sofas</a>
+      <a href="shop.html?category=bed">Bed</a>
+      <a href="shop.html?category=decor">Decor</a>
+    </div>
+
+    <div>
+      <h4>Support</h4>
+      <a href="contact.html">Contact Us</a>
+      <a href="help.html">Help Center</a>
+      <a href="delivery.html">Delivery</a>
+    </div>
+
+    <div>
+      <h4>Legal</h4>
+      <a href="privacy.html">Privacy Policy</a>
+      <a href="terms.html">Terms & Conditions</a>
+    </div>
+  </div>
+
+  <p class="footer-bottom">© 2026 CozyCorner. All rights reserved.</p>
+</footer>
+
+<!-- JS -->
+<script src="js/auth.js"></script>
+<script src="js/layout.js"></script>
+
+<!-- ✅ REQUIRED FOR TOAST -->
+<div id="toast"></div>
+
+</body>
+</html>

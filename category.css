@@ -1,0 +1,34 @@
+/* ================= CATEGORIES ================= */
+.categories {
+  padding: 80px 60px;
+  background: #fff;
+}
+
+.categories h2 {
+  text-align: center;
+  font-size: 32px;
+  margin-bottom: 40px;
+}
+
+.category-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+}
+
+.category-card {
+  padding: 50px 20px;
+  background: #f7f7f7;
+  border-radius: 14px;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.category-card:hover {
+  background: #7d786f;
+  color: white;
+  transform: translateY(-6px);
+}

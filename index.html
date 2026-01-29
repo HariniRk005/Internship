@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>CozyCorner | Modern Furniture</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/component.css">
+  <link rel="stylesheet" href="css/pages.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+
+<!-- ================= HEADER ================= -->
+<header class="header">
+  <div class="logo">
+  <a href="index.html">CozyCorner</a>
+</div>
+
+  <nav class="nav">
+    <a href="index.html">Home</a>
+    <a href="shop.html">Shop</a>
+    <a href="cart.html">Cart</a>
+    <a href="profile.html" id="profile-link" style="display:none">Profile</a>
+
+  <a href="login.html" id="login-link">Login</a>
+  <a href="index.html" id="logout-link" style="display:none" onclick="logoutUser()">Logout</a>
+  
+  </nav>
+</header>
+
+<!-- ================= HERO SLIDER ================= -->
+<section class="hero">
+  <div class="hero-slider">
+
+    <div class="slide active" data-category="sofa"
+      style="background-image:url('images/banners/hero\ 1.jpg')">
+      <div class="hero-content">
+        <h1>Comfort That Feels Like Home</h1>
+        <p>Premium sofas & living essentials</p>
+        <a href="shop.html?category=sofa" class="btn-primary">Shop Now</a>
+      </div>
+    </div>
+
+    <div class="slide" data-category="bed"
+      style="background-image:url('images/banners/hero\ 2.jpg')">
+      <div class="hero-content">
+        <h1>Modern Furniture for Modern Living</h1>
+        <p>Designed for elegance & comfort</p>
+        <a href="shop.html?category=bed" class="btn-primary">Explore</a>
+      </div>
+    </div>
+
+    <div class="slide" data-category="dining"
+      style="background-image:url('images/banners/hero\ 3.jpg')">
+      <div class="hero-content">
+        <h1>Crafted for Contemporary Living</h1>
+        <p>Elevate your space with refined furniture</p>
+        <a href="shop.html?category=dining" class="btn-primary">Explore</a>
+      </div>
+    </div>
+
+    <div class="slide" data-category="kitchen"
+      style="background-image:url('images/banners/hero\ 4.jpg')">
+      <div class="hero-content">
+        <h1>Redefining Modern Interiors</h1>
+        <p>Elegant furniture for inspired spaces</p>
+        <a href="shop.html?category=kitchen" class="btn-primary">Explore</a>
+      </div>
+    </div>
+
+    <div class="slide" data-category="bed"
+      style="background-image:url('images/banners/hero\ 5.jpg')">
+      <div class="hero-content">
+        <h1>Rest in Modern Elegance</h1>
+        <p>Serene designs for peaceful living</p>
+        <a href="shop.html?category=bed" class="btn-primary">Explore</a>
+      </div>
+    </div>
+
+  </div>
+
+  <button class="arrow prev">&#10094;</button>
+  <button class="arrow next">&#10095;</button>
+</section>
+
+
+<!-- ================= CATEGORIES ================= -->
+<section class="categories">
+  <h2>Shop by Category</h2>
+  <br>
+  <div class="category-grid">
+  <a href="shop.html?category=sofa" class="category-card">Sofas</a>
+  <a href="shop.html?category=bed" class="category-card">Beds</a>
+  <a href="shop.html?category=dining" class="category-card">Dining</a>
+  <a href="shop.html?category=decor" class="category-card">Decor</a>
+</div>
+
+</section>
+
+<!-- ================= TRENDING ================= -->
+<section class="trending">
+  <h2>Trending Products</h2>
+
+  <div class="product-carousel">
+
+    <!-- Luxury Sofa -->
+    <a href="details.html?id=sofa1" class="product-card">
+      <img src="images/products/sofa-1.jpg">
+      <h4>Luxury Sofa</h4>
+      <p>₹42,999</p>
+    </a>
+
+    <!-- King Size Bed -->
+    <a href="details.html?id=bed1" class="product-card">
+      <img src="images/products/bed-1.jpg">
+      <h4>King Size Bed</h4>
+      <p>₹58,999</p>
+    </a>
+
+    <!-- 4-Seater Dining -->
+    <a href="details.html?id=dining1" class="product-card">
+      <img src="images/products/dining-1.jpg">
+      <h4>4-Seater Dining</h4>
+      <p>₹12,999</p>
+    </a>
+
+  </div>
+</section>
+
+<!-- ================= FOOTER ================= -->
+<footer class="footer">
+  <div class="footer-grid">
+    
+    <div>
+      <h4>CozyCorner</h4>
+      <p>Modern furniture designed for comfort and style.</p>
+    </div>
+
+    <div>
+      <h4>Shop</h4>
+      <a href="shop.html">All Products</a>
+      <a href="shop.html?category=sofa">Sofas</a>
+      <a href="shop.html?category=bed">Bed</a>
+      <a href="shop.html?category=decor">Decor</a>
+    </div>
+
+    <div>
+      <h4>Support</h4>
+      <a href="contact.html">Contact Us</a>
+      <a href="help.html">Help Center</a>
+      <a href="delivery.html">Delivery</a>
+    </div>
+
+    <div>
+      <h4>Legal</h4>
+      <a href="privacy.html">Privacy Policy</a>
+      <a href="terms.html">Terms & Conditions</a>
+    </div>
+
+  </div>
+
+  <p class="footer-bottom">© 2026 CozyCorner. All rights reserved.</p>
+</footer>
+
+<script src="js/carousel.js"></script>
+<script src="js/layout.js"></script>
+<script src="js/cart.js"></script>
+<script src="js/shop.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Cart | CozyCorner</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/component.css">
+  <link rel="stylesheet" href="css/pages.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+
+<header class="header">
+  <div class="logo">
+  <a href="index.html">CozyCorner</a>
+</div>
+
+  <nav class="nav">
+    <a href="index.html">Home</a>
+    <a href="shop.html">Shop</a>
+    <a href="cart.html" class="active">Cart</a>
+  </nav>
+</header>
+
+<section class="cart-page">
+  <h2>Your Cart</h2>
+  <br><br>
+
+  <div id="emptyCart" style="display:none">
+    <p>Your cart is empty</p>
+    <br><br><br><br>
+    <a href="shop.html" class="btn-primary">Go to Shop</a>
+  </div>
+  <br><br>
+  <div id="cartItems"></div>
+
+  <div id="cartSummary">
+    <h3>Total: ₹<span id="totalPrice">0</span></h3>
+    <br><br><br>
+    <button class="btn-primary" onclick="handleCheckout()">Checkout</button>
+  </div>
+</section>
+
+<br><br>
+
+<footer class="footer">
+  <div class="footer-grid">
+    
+    <div>
+      <h4>CozyCorner</h4>
+      <p>Modern furniture designed for comfort and style.</p>
+    </div>
+
+    <div>
+      <h4>Shop</h4>
+      <a href="shop.html">All Products</a>
+      <a href="shop.html?category=sofa">Sofas</a>
+      <a href="shop.html?category=bed">Bed</a>
+      <a href="shop.html?category=decor">Decor</a>
+    </div>
+
+    <div>
+      <h4>Support</h4>
+      <a href="contact.html">Contact Us</a>
+      <a href="help.html">Help Center</a>
+      <a href="delivery.html">Delivery</a>
+    </div>
+
+    <div>
+      <h4>Legal</h4>
+      <a href="privacy.html">Privacy Policy</a>
+      <a href="terms.html">Terms & Conditions</a>
+    </div>
+
+  </div>
+
+  <p class="footer-bottom">© 2026 CozyCorner. All rights reserved.</p>
+</footer>
+
+<script src="js/cart.js"></script>
+<div id="toast"></div>
+</body>
+</html>
